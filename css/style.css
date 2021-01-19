@@ -4,14 +4,15 @@
     padding :0;
     margin :0;
 }
-
-body {
-    font-family: sans-serif;
-    /*height: 100%;*/
-
-    min-width: 100%;
+html ,body{
     
-            
+    font-family: sans-serif;  
+}
+@media screen and (min-width: 768px) and (min-height:900px){
+    html, body {
+        font-family: sans-serif; 
+        height: 100%;  
+    }
 }
 img {                           /* To prevent dragging image */
     -webkit-user-drag: none;
@@ -27,8 +28,12 @@ img {                           /* To prevent dragging image */
     -moz-user-select: none;  /*Firefox*/ 
     -ms-user-select: none; /*Internet Explorer/Edge */
 }
-    
+section {
 
+
+    height:100%;
+
+}
 
 /* ---------------------------End Global--------------------------- */
 
@@ -37,7 +42,8 @@ img {                           /* To prevent dragging image */
     position: sticky;
     top :0;
     z-index: 10;
-    min-height: 100%;    /*Active This proberty In The End Of Project*/
+    /*min-height: 100%;    /*Active This proberty In The End Of Project*/
+
 }
 .navbar {
     background-color:black; 
