@@ -20,14 +20,14 @@ img {                           /* To prevent dragging image */
     -o-user-drag: none;
     user-drag: none;
   }
-/*.disable-select {
-    user-select: none;  supported by Chrome and Opera 
-    -webkit-user-select: none;  Safari 
-    -khtml-user-select: none;  Konqueror HTML 
-    -moz-user-select: none;  Firefox 
-    -ms-user-select: none; Internet Explorer/Edge }
+.disable-select {
+    user-select: none;  /*supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none;  /*Konqueror HTML */
+    -moz-user-select: none;  /*Firefox*/ 
+    -ms-user-select: none; /*Internet Explorer/Edge */
+}
     
-    Active This Ptobrty in The End Of project */  
 
 
 /* ---------------------------End Global--------------------------- */
@@ -37,7 +37,7 @@ img {                           /* To prevent dragging image */
     position: sticky;
     top :0;
     z-index: 10;
-    /*min-height: 100%;*/     /*Active This proberty In The End Of Project*/
+    min-height: 100%;    /*Active This proberty In The End Of Project*/
 }
 .navbar {
     background-color:black; 
