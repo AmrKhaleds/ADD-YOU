@@ -262,7 +262,7 @@ img {                           /* To prevent dragging image */
 #testmentals{
     padding-bottom :20px;
     padding-top :20px;
-
+    margin-bottom:50px;
 }
 
 .testmentals{
@@ -326,7 +326,14 @@ img {                           /* To prevent dragging image */
 .contact-us{
     margin-top :22px;
 }
-
+.contact-us p a {
+    text-decoration: none;
+    color :white;
+}
+.contact-us p a:hover{
+    color:goldenrod;
+    transition: 0.5s ease;
+}
 .footer-box{
     padding:20px;
     margin-left:0;
@@ -347,7 +354,11 @@ img {                           /* To prevent dragging image */
 
 
 .form-control{
-
+    color :black;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgb(217, 165, 32);
+    border-color: #fff;
 }
 
 #footer .btn-primary{
