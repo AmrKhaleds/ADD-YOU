@@ -33,28 +33,19 @@ img {                           /* To prevent dragging image */
 section {
     height:100%;
 }
-::-webkit-scrollbar-track
-{
-  
+::-webkit-scrollbar-track{
   border-radius: 10px;
-  
-  
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar{
     width: 12px;
     background-color: #000000;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb{
   border-radius: 10px;
-  
   background-color: #daa520;
-
-  
-    
+  margin:50px;
 }
 ::-webkit-scrollbar-thumb:hover{
     background-color: rgb(250, 196, 58);
@@ -445,4 +436,8 @@ section {
 .social-icons .fa:hover{
     transform: translateY(-10px);
     color :goldenrod;
+}
+.copyright {
+    margin-top :40px;
+    
 }
