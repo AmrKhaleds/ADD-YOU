@@ -9,23 +9,30 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/Scroll-To-Top-Button.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/Add-You-Black1.ico"/>
     </head>
     <body>
+      <div class="container">
+        <div class="back-to-top">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+      </div>
+
       <!---------------------------------Start Nav---------------------------------------------->
         <nav id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
-                  <a class="navbar-brand" href="#"><img src="img/Add-You-Black.png" title="HOME" class="disable-select" alt="ADD YOU LOGO"></a>
+                  <a class="navbar-brand" href="#home"><img src="img/Add-You-Black.png" title="HOME" class="disable-select" alt="ADD YOU LOGO"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
                     <i class="fa fa-bars"></i>
                   </button>
                   <div class="collapse navbar-collapse disable-select" id="collapse_target">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="#top" title="Home">HOME</a>
+                        <a class="nav-link" href="#home" title="Home">HOME</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#services" title="SERVICES">SERVICES</a>
@@ -37,7 +44,7 @@
                         <a class="nav-link" href="#testmentals" title="TESTMENTALS">TESTMENTALS</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#footer" title="CONTACT">CONTACT</a>
+                        <a class="nav-link" href="#contact_us" title="CONTACT">CONTACT</a>
                       </li>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="#">Action</a></li>
@@ -58,7 +65,7 @@
       <!---------------------------------End Nav---------------------------------------------->
 
       <!---------------------------------Start Banner---------------------------------------------->
-        <section id="banner" >
+        <section id="home" >
             <div class="container">
                 <div class="addyou-img disable-select">
                     <img src="img/Add-You-Black.png" alt="ADD YOU LOGO">
@@ -168,20 +175,20 @@
       <---------------------------------End Social Media ---------------------------------------------->
       
       <!---------------------------------Start Footer ---------------------------------------------->
-        <section id="footer">
-          <div class="container footer-container disable-select">
+        <section id="contact_us">
+          <div class="container contact_us-container disable-select">
             <div class="row offset-1">
-              <div class="col-md-4 footer-box">
+              <div class="col-md-4 contact_us-box">
                 <img src="img/Add-You-Black.png" title="HOME" class="disable-select" alt="ADD YOU LOGO">
                 <p>Subscribe Easy Tutorials Youtube Channel To watch more videos on Website Development , Digital Marketing, Wordpress and graphics Designing.</p>
               </div>
-              <div class="col-md-4 footer-box contact-us">
+              <div class="col-md-4 contact_us-box contact-us">
                 <h4>Contact Us</h4>
                 <p><i class="fa fa-map-marker"></i>&nbsp;Galim, behind the palace of 'Aisha Fahmy, building No. 3 of the sea. Alexandria, Alexandria Governorate, Egypt 21500</p>
                 <p><i class="fa fa-phone"></i>&nbsp;<a href="#PhoneNumber">+2 01110012666</a></p>
                 <p><i class="fa fa-envelope"></i>&nbsp;<a href="#Email">addyou.bc@gmail.com</a></p>
               </div>
-              <div class="col-md-4 footer-box contact-us">
+              <div class="col-md-4 contact_us-box contact-us">
                 <h3>Subscribe Newsletter</h3>
                 <input type="email" class="form-control" placeholder="Your Email">
                 <button type="button" class="btn btn-primary">Subscribe</button>
@@ -210,5 +217,6 @@
           var scroll = new SmoothScroll('a[href*="#"]')
         </script>
         <script src="js/main.js"></script>
+        <script src="js/Scroll-To-Top-Button.js"></script>
       </body>
 </html>
