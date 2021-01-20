@@ -8,7 +8,10 @@
     border-radius: 50%;
     
 }
-
+#toTopBtn:hover{
+  background-color: rgb(250, 196, 58);
+  transition: .3s ease-in-out;
+}
 .js .cd-top--fade-out {
     opacity: .5
 }
@@ -39,7 +42,8 @@
     background: url(../img/capslock.svg) no-repeat center 50%;
     background-color: goldenrod;
     background-size: 25px 25px;
-    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
+    transition: .3s ease-in-out;
 }
 
 .height {

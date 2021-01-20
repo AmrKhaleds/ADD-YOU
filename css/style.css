@@ -33,7 +33,33 @@ img {                           /* To prevent dragging image */
 section {
     height:100%;
 }
+::-webkit-scrollbar-track
+{
+  
+  border-radius: 10px;
+  
+  
+}
 
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  
+  background-color: #daa520;
+
+  
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(250, 196, 58);
+    transition: 1s ease-in-out;
+}
 /* ---------------------------End Global--------------------------- */
 
 /* ---------------------------Start Nav--------------------------- */
@@ -184,9 +210,6 @@ section {
     width :100px;
     margin-top: 20px;
 }
-
-
-
 #services .btn-primary{
     padding:8px 25px;
     background: lightseagreen;  
