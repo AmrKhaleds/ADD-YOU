@@ -55,6 +55,7 @@ section {
 /* ---------------------------End Global--------------------------- */
 
 /* ---------------------------Start Nav--------------------------- */
+
 #nav-bar {
     position: sticky;
     top :0;
@@ -405,7 +406,7 @@ section {
     margin-top :20px;
 
     font-weight: bold;
-    
+
 }
 #contact_us .btn-primary:hover{   /* Simple Hover */
     background: #000;
