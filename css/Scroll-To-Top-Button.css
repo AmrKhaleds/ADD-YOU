@@ -43,7 +43,6 @@
     background-color: goldenrod;
     background-size: 25px 25px;
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
-    transition: .3s ease-in-out;
 }
 
 .height {
