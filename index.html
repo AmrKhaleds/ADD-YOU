@@ -213,10 +213,38 @@
             <p><i class="fa fa-envelope"></i>&nbsp;<a href="#Email">addyou.bc@gmail.com</a></p>
           </div>
           <div class="col-md-4 contact_us-box contact-us">
-            <h3>Subscribe Newsletter</h3>
-            <input type="email" class="form-control" placeholder="Your Email">
-            <button type="button" class="btn btn-primary">Subscribe</button>
-
+            <h3>Contactanos</h3>
+            <form class="contact-form" action="php/contact.php" method="POST" enctype="multipart/form-data" role="form" >
+              <div class="form-group">
+                <label class="control-label" for="fname">First Name:</label>
+                <div class="col-sm-10">          
+                <input name="first_name" type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="lname">Last Name:</label>
+                <div class="col-sm-10">          
+                <input name="last_name" type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="email">Email:</label>
+                <div class="col-sm-10">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="comment">Comment:</label>
+                <div class="col-sm-10">
+                <textarea name="comment" class="form-control comment" rows="3" id="comment"></textarea>
+                </div>
+              </div>
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
+            </form>
           </div>
           <!---------------------------------End Social Media ---------------------------------------------->
           <hr text-center>
@@ -237,6 +265,7 @@
           <!---------------------------------End Social Media ---------------------------------------------->
         </div>
     </section>
+    
     <!---------------------------------js---------------------------------------------->
     <script src="js/smooth-scroll.js"></script>
     <script>

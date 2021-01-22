@@ -89,10 +89,12 @@ section {
     text-align: left; 
 }
 .navbar-nav li a:focus,
-.navbar-nav li a:hover{
+.navbar-nav li a:hover,
+.active{
     color :goldenrod !important;
     transition: 0.5s ease-in-out;
 }
+
 .navbar-nav li a:hover
 {
     transform: translateY(-5px);
@@ -349,7 +351,7 @@ section {
     font-weight: bold;
 }
 .contact-us h3{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 
 }
@@ -458,4 +460,9 @@ footer{
 }
 footer span{
     color :white;
+}
+
+#contact_us .comment{
+    min-height :20px;
+    max-height: 160px;
 }
