@@ -406,7 +406,7 @@ section {
     text-transform: uppercase;
     font-size: 18px;
     margin-top :20px;
-
+    width :100%;
     font-weight: bold;
 
 }
@@ -463,6 +463,13 @@ footer span{
 }
 
 #contact_us .comment{
+    height: 2000px;
+
+}
+
+@media screen and (min-width: 768px) and (min-height:900px){
+#contact_us .comment{
     min-height :20px;
-    max-height: 160px;
+    max-height: 132px;
+    }
 }
