@@ -39,9 +39,8 @@
 	#contact-us-page .col-md-4{
 		background: #ff9b00;
 		padding: 4%;
-		border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-        margin-bottom: 15px;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
 	}
 	#contact-us-page .contact-info{
 		margin-top:10%;
@@ -81,6 +80,9 @@
     background: #000;
     color :goldenrod;
     transform: translateY(-5px);
+}
+.message_form {
+  max-height:400px ;
 }
     </style>
   </head>
@@ -167,14 +169,15 @@
                     <div class="form-group">
                       <label class="control-label col-sm-2" for="comment">Comment:</label>
                       <div class="col-sm-10">
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <textarea class="form-control message_form" rows="5" id="comment" name="msg"></textarea>
                       </div>
                     </div>
                     <div class="form-group">        
                       <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default" name="btn-send">Submit</button>
                       </div>
                     </div>
+                    
                 </div>
             </div>
 
@@ -183,44 +186,49 @@
 
 </section>
    <!---------------------------------Start Footer ---------------------------------------------->
-    <section id="contact_us">
-      <div class="container contact_us-container disable-select">
-        <div class="row offset-1">
-          <div class="col-md-4 contact_us-box">
-            <img src="img/Add-You-Black1.png" title="HOME" class="disable-select" alt="ADD YOU LOGO">
-            <p>Subscribe Easy Tutorials Youtube Channel To watch more videos on Website Development , Digital Marketing,
-              Wordpress and graphics Designing.</p>
-          </div>
-          <div class="col-md-4 contact_us-box contact-us">
-            <h4>Contact Us</h4>
-            <span style="display: flex;
-                  flex-direction: row;">
-              <span><i class="fa fa-map-marker"></i></span>
-              <p>Galim, behind the palace of 'Aisha Fahmy, building No. 3 of the sea. Alexandria, Alexandria Governorate,
-                Egypt 21500</p>
-            </span>
-            <p><i class="fa fa-phone"></i>&nbsp;<a href="#PhoneNumber">+2 01110012666</a></p>
-            <p><i class="fa fa-envelope"></i>&nbsp;<a href="#Email">addyou.bc@gmail.com</a></p>
-          </div>
-          <!---------------------------------End Social Media ---------------------------------------------->
-          <hr text-center>
-          <div class="container text-center">
-            <p class="social-title"><b>Find Us On Social Media</b></p>
-            <div class="social-icons text-center">
-              <a href="#facebook" class="fa fa-facebook-square" title="Facebook"></a>
-              <a href="#twitter" class="fa fa-twitter-square" title="Twitter"></a>
-              <a href="#instagram" class="fa fa-instagram" title="Instagram"></a>
-              <a href="#whatsapp" class="fa fa-whatsapp" title="Whatsapp"></a>
-            </div>
-            <footer class="footer text-center">
-              <div class="container">
-                <span class="copyright">&#169; 2021 <b>ADD YOU</b> All Rights Reserved.</span>
-              </div>
-            </footer>
-          </div>
-          <!---------------------------------End Social Media ---------------------------------------------->
+   <section id="contact_us">
+    <div class="container contact_us-container disable-select">
+      <div class="row offset-1">
+        <div class="col-md-4 contact_us-box">
+          <img src="img/Add-You-Black1.png" title="HOME" class="disable-select" alt="ADD YOU LOGO">
+          <p>Subscribe Easy Tutorials Youtube Channel To watch more videos on Website Development , Digital Marketing,
+            Wordpress and graphics Designing.</p>
         </div>
-    </section>
+        <div class="col-md-4 contact_us-box contact-us">
+          <h4>Contact Us</h4>
+          <span style="display: flex;
+                flex-direction: row;">
+            <span><i class="fa fa-map-marker"></i></span>
+            <p>Galim, behind the palace of 'Aisha Fahmy, building No. 3 of the sea. Alexandria, Alexandria Governorate,
+              Egypt 21500</p>
+          </span>
+          <p><i class="fa fa-phone"></i>&nbsp;<a href="#PhoneNumber">+2 01110012666</a></p>
+          <p><i class="fa fa-envelope"></i>&nbsp;<a href="#Email">addyou.bc@gmail.com</a></p>
+        </div>
+        <div class="col-md-4 contact_us-box contact-us">
+          <h5>Are you a customer?</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda! Quibusdam officiis nobis laudantium architecto praesentium, accusamus ab dignissimos ullam asperiores voluptatibus blanditiis ex officia. Excepturi nesciunt sed necessitatibus esse.</p>
+          <button onclick="window.location.href='#top'" type="button" class="btn btn-primary show-all" title="All Services" data-type='all-services' href=>Contact With Us</button>
+        </div>
+        <!---------------------------------End Social Media ---------------------------------------------->
+        <hr text-center>
+        <div class="container text-center">
+          <p class="social-title"><b>Find Us On Social Media</b></p>
+          <div class="social-icons text-center">
+            <a href="#facebook" class="fa fa-facebook-square" title="Facebook"></a>
+            <a href="#twitter" class="fa fa-twitter-square" title="Twitter"></a>
+            <a href="#instagram" class="fa fa-instagram" title="Instagram"></a>
+            <a href="#whatsapp" class="fa fa-whatsapp" title="Whatsapp"></a>
+          </div>
+          <footer class="footer text-center">
+            <div class="container">
+              <span class="copyright">&#169; 2021 <b>ADD YOU</b> All Rights Reserved.</span>
+            </div>
+          </footer>
+        </div>
+        <!---------------------------------End Social Media ---------------------------------------------->
+      </div>
+  </section>
     
     <!---------------------------------js---------------------------------------------->
     <script src="js/smooth-scroll.js"></script>
