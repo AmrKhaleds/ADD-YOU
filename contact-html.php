@@ -135,7 +135,9 @@
 
     <!---------------------------------Start Banner---------------------------------------------->
 <section id="contact-us-page">
+  
     <div class="container disable-select">
+      
         <div class="row contact-info-div">
             <div class="col-md-4 ">
                 <div class="contact-info">
@@ -144,7 +146,45 @@
                     <h4>We would love to hear from you !</h4>
                 </div>
             </div>
-            <?php 
+            
+            <div class="col-md-8">
+                <div class="contact-form">
+                  <form action="contact.php" method="post">
+                      <div class="form-group">
+                        <label class="control-label col" for="fname">First Name:</label>
+                        <div class="col-sm-10">          
+                          <input type="text" class="form-control" placeholder="Enter First Name" name="fname">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col" for="lname">Last Name:</label>
+                        <div class="col-sm-10">          
+                          <input type="text" class="form-control" placeholder="Enter Last Name" name="lname">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Comment:</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" rows="5" id="comment" name="msg"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button class="btn btn-default" name="btn-send">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <?php 
                             $Msg = "";
                             if(isset($_GET['error']))
                             {
@@ -159,41 +199,6 @@
                             }
                         
                         ?>
-            <div class="col-md-8">
-                <div class="contact-form">
-                    <div class="form-group">
-                      <label class="control-label col" for="fname">First Name:</label>
-                      <div class="col-sm-10">          
-                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col" for="lname">Last Name:</label>
-                      <div class="col-sm-10">          
-                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="email">Email:</label>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="comment">Comment:</label>
-                      <div class="col-sm-10">
-                        <textarea class="form-control" rows="5" id="comment" name="msg"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group">        
-                      <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default" name="btn-send">Submit</button>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 
 </section>
