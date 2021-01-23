@@ -137,9 +137,9 @@
 <section id="contact-us-page">
   
     <div class="container disable-select">
-      
-        <div class="row contact-info-div">
-            <div class="col-md-4 ">
+          <form action="contact.php" method="post">
+            <div class="row contact-info-div">
+              <div class="col-md-4 ">
                 <div class="contact-info">
                     <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
                     <h2>Contact Us</h2>
@@ -182,7 +182,7 @@
                     </form>
                 </div>
             </div>
-
+          </form>
         </div>
         <?php 
                             $Msg = "";
