@@ -1,3 +1,16 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 body{
     background-color: #ffffff;
 }
@@ -33,8 +46,39 @@ margin-bottom: 15px;
 #contact-us-page .contact-form label{
     font-weight:600;
 }
+#contact-us-page .form-control {
+    border: 1px solid #6C757D;
+    box-shadow: none;
+}
+#contact-us-page .contact-form .btn-group{
+    outline: none;
+}
+#contact-us-page .contact-form .btn-group .btn{
+    width: 100%;
+    background:none;
+    color:#6C757D;
+    box-shadow: none !important;
+    border: 1px solid #6C757D;
+    box-shadow: none;
+   
+}
+#contact-us-page .contact-form .btn-group .btn option {
+    margin: 5px;
+}
 
-#contact-us-page .contact-form button{
+
+#contact-us-page .contact-form .btn-group .dropdown-menu {
+    width: 100%;
+}
+#contact-us-page .contact-form .dropdown-form .dropdown-select {
+    width: 100%;
+    max-width: none;
+    height: 38px;
+    border-radius: 0.2rem;
+}
+
+
+#contact-us-page .contact-form .send_button button{
 padding:8px 25px;
 margin-bottom: 0;
 background: lightseagreen;  
@@ -49,11 +93,11 @@ font-size: 18px;
 margin-top :5px;
 font-weight: bold;
 }
-#contact-us-page .contact-form button:hover{   /* Simple Hover */
+#contact-us-page .contact-form .send_button button:hover{   /* Simple Hover */
 background: #000;
 color :goldenrod;
 transform: translateY(-5px);
 }
 .message_form {
-max-height:400px ;
+max-height:340px ;
 }
