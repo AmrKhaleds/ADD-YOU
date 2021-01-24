@@ -27,6 +27,11 @@
   </head>
 
   <body>
+    <div class="loader_bg">
+      <div class="loader">
+
+      </div>
+    </div>
     <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"
       title="Back To Top" style="display: none;"></a>
     <!---------------------------------Start Nav---------------------------------------------->
@@ -240,10 +245,14 @@
     <!---------------------------------js---------------------------------------------->
     <script src="js/smooth-scroll.js"></script>
     <script>
-      var scroll = new SmoothScroll('a[href*="#"]')
+      var scroll = new SmoothScroll('a[href*="#"]');
+      setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+      }, 2000);
     </script>
     <script src="js/main.js"></script>
     <script src="js/Scroll-To-Top-Button.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!---------------------------------js---------------------------------------------->
   </body>
 </html>
