@@ -1,0 +1,63 @@
+body{
+    min-height: 1000px;
+}
+#all-services {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 1700px){
+    #all-services {
+        width :1700px;
+        margin :0 auto 0 auto;
+    }
+}
+#all-services section {
+    width :350px;
+    margin :170px auto 0 auto;
+    position: relative;
+    background-color: black;
+    height:300px;
+    color :white;
+    transition: all .5s;
+    border-radius: 12px;
+    min-width: 350px;
+}
+#all-services section:hover{
+    height: 400px;
+}
+
+.services-section img{
+    width :250px;
+    height: 250px;
+    position: absolute;
+    left:50px;
+    top :-40px;
+    transition: all .8s;
+    border-radius: 12px;
+}
+.services-section:hover img{
+    top :-100px;
+	transform:rotate(360deg);
+}
+.services-section .out-title{
+    position: absolute;
+    bottom: 5px;
+    opacity: 1;
+    left:50px;
+    transition: .2s;
+}
+.services-section:hover .out-title{
+    opacity: 0;
+}
+
+.all-services-container{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    opacity: 0 ;
+    transition: .5s;
+    padding: 10px;
+}
+.services-section:hover .all-services-container{
+    opacity: 1;
+}
