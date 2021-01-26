@@ -7,13 +7,14 @@
 }
 html ,body{
     font-family: sans-serif; 
-    min-width: 350px; 
+    min-width: 316px; 
     
 }
 @media screen and (min-width: 768px) and (min-height:900px){
     html, body {
         font-family: sans-serif; 
         height: 100%;  
+        min-height: 100%;
     }
 }
 
