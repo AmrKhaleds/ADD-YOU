@@ -185,17 +185,7 @@ section {
     display: none !important;
 }
 button.mfp-close{
-    overflow: visible;
-    cursor: pointer;
-    background-color:goldenrod;
-    border: 0;
-    -webkit-appearance:none;
-    display: block;
-    outline: none;
-    padding:0;
-    z-index: 1046;
-    box-shadow: none;
-    transition: 0.5s ease;
+    display: none;
 }
 .mfp-close {
     width :44px;
@@ -204,6 +194,22 @@ button.mfp-close{
     line-height: 44px;
     position: absolute;
     right: 50px;
+    bottom :100px ;
+}
+@media screen and (min-width: 1066px){
+    button.mfp-close{
+        overflow: visible;
+        cursor: pointer;
+        background-color:goldenrod;
+        border: 0;
+        -webkit-appearance:none;
+        display: block;
+        outline: none;
+        padding:0;
+        z-index: 1046;
+        box-shadow: none;
+        transition: 0.5s ease;
+        }
 }
 
 #home .addyou-img img {
