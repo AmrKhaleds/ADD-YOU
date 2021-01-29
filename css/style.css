@@ -181,6 +181,30 @@ section {
     color :#fff;
     text-decoration: none;
 }
+.mfp-hide{
+    display: none !important;
+}
+button.mfp-close{
+    overflow: visible;
+    cursor: pointer;
+    background-color:goldenrod;
+    border: 0;
+    -webkit-appearance:none;
+    display: block;
+    outline: none;
+    padding:0;
+    z-index: 1046;
+    box-shadow: none;
+    transition: 0.5s ease;
+}
+.mfp-close {
+    width :44px;
+    height: 44px;
+    border-radius: 50%;
+    line-height: 44px;
+    position: absolute;
+    right: 50px;
+}
 
 #home .addyou-img img {
     width :100%;
