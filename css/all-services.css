@@ -45,15 +45,32 @@ body{
 
 .services-section .out-title{
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     opacity: 1;
     transition: .2s;
     font-weight: bold;
 }
 .services-section:hover .out-title{
     opacity: 0;
-}
+    transition: .2s;
 
+}
+.services-section .angle-down{
+    display: flex;
+    justify-content: center;
+}
+.services-section .angle-down i{
+    font-size:48px;
+    color:white;
+    position:absolute;
+    bottom: 1px;
+    opacity: 1;
+    transition: .2s;
+}
+.services-section:hover .angle-down{
+    opacity: 0;
+    transition: .2s;
+}
 .all-services-container{
     position: absolute;
     bottom: 0;
