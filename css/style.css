@@ -149,6 +149,9 @@ section {
 {
     transform: translateY(-5px);
 }
+.navbar-nav li a:active{
+    color :goldenrod !important;
+}
 
 .fa-bars {
     color :#fff;
