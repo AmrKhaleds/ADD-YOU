@@ -318,8 +318,10 @@ button.mfp-close{display: none;}
     font-weight :600;
     margin-top:35px;
 }
-#about-us ul li {margin :10px 0;}
-#about-us ul {margin-left:40px;}
+#about-us ul {margin-left:40px;list-style: none;
+    counter-reset: steps;}
+#about-us ul li {margin :10px 0;counter-increment: steps;}
+
 .about-img img{
     margin-top :55px;
     margin-bottom:35px;
@@ -329,6 +331,22 @@ button.mfp-close{display: none;}
     width :75%;
     padding:0 20px 0 20px;
 }
+
+#about-us ul li::before{
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: #daa520;
+    color: white;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+}
+
+
+
 /* ---------------------------End About Us--------------------------- */
 
 /* ---------------------------Start TESTMENTALS--------------------------- */
